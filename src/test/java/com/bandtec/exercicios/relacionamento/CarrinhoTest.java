@@ -138,7 +138,7 @@ public class CarrinhoTest {
 
     @Test
     public void testRemoverPorNomeQuandoAcionadoComNomeExistenteDeveAlterarTamanhoDaLista() {
-        Carrinho instance =new Carrinho("Bandtec");
+        Carrinho instance = new Carrinho("Bandtec");
         this.popularCarrinho(instance);
         instance.removerPorNome("playstation 5");
         assertEquals((this.produtos.size() - 2), instance.getQuantidade());
